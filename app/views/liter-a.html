@@ -1,0 +1,42 @@
+{% extends "layouts/layout.html" %}
+{# content #}
+{% block content %}
+   
+<script type="text/javascript" src="/jquery.js"></script>
+<script type="text/javascript" src="/cboxmod.js"></script>
+<table class="contentTab" style="width:750px" cellpadding="0" cellspacing="0" border="0">
+	<tr> 
+		<td class="contentTabTd1"></td> 
+		<td class="contentTabTd2"></td>
+	</tr>
+	<tr> 
+		<td class="contentTabTd3">
+			<div class="buildinfo" id="liter_a">
+			<p><b>ул. Петровская, д.13, лит А</b></p><br>
+			<p><b>Квартира №1</b> <span class="sold">продана</span><br><a href="/html/a1.html" title="Подробнее">Трёхуровневая квартира общей площадью 269,7 м<sup>2</sup></a></p><br>
+			<p><b>Квартира №2</b> <span class="price">— 65.800 р./кв.м.</span><br><a href="/html/a2.html" title="Подробнее">Четырёхуровневая квартира с мансардным этажом<sup>&nbsp;</sup><br>общей площадью 379,9 м<sup>2</sup></a></p><br>
+			<p><b>Квартира №3</b> <span class="price">— 92.800 р./кв.м.</span><br><a href="/html/a3.html" title="Подробнее">Трёхуровневая квартира общей площадью 269,4 м<sup>2</sup><br>с прямым видом на озеро<sup>&nbsp;</sup></a></p><br>
+			<p style="text-indent:0"><a href="/html/plan.html" title="Планировки" class="backlink">Назад к планировкам</a></p>
+			</div>
+			<div class="buildfaces">
+				<div class="buildface">
+					<a href="?a_face1" title="Увеличить">
+						<img src="/pic/pixel.gif" width="164" height="96" alt="литер А, фасад NE" id="a_face1">
+					</a><br>Фасад дома &ndash; северо-восточная сторона
+				</div>
+				<div class="buildface">
+					<a href="?a_face2" title="Увеличить">
+						<img src="/pic/pixel.gif" width="164" height="96" alt="литер А, фасад NW" id="a_face2">
+					</a><br>Фасад дома &ndash; северо-западная сторона
+				</div>
+			</div>
+		</td> 
+		<td class="contentTabTd4"></td>
+	</tr>
+	<tr> 
+		<td class="contentTabTd5"></td> 
+		<td class="contentTabTd6"></td>
+	</tr>
+</table>
+   
+  {% endblock %}

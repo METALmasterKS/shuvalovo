@@ -1,4 +1,5 @@
 nbproject
+app/tmp
 ._*
 .vagrant
 .~lock.*

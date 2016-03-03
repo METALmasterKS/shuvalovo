@@ -1,0 +1,56 @@
+{% extends "layouts/layout.html" %}
+{# content #}
+{% block content %}
+
+<table class="contentTab2" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td style="width:700px;line-height:0"><img src="/pic/pixel.gif" width="700" height="1" border="0" alt="" /></td>
+        <td class="contentTab2Td2"><img src="/pic/pixel.gif" width="6" height="6" border="0" alt="" /></td>
+        <td class="contentTab2Td1"></td>
+        <td class="contentTab2Td1"></td>
+
+    </tr>
+    <tr>
+        <td></td>
+        <td class="contentTab2Td4"></td>
+        <td class="contentTab2Td3" style="width:265px;">
+            <!--<p style="padding:8px; display:block;"><strong>Эксклюзивный риэлтор
+<br>  группа компаний "Экотон"</strong><br>
+            (812) 325-16-99<br>
+www: <a href="http://ecoton.spb.ru">http://ecoton.spb.ru</a></p><br>-->
+
+            <p style="padding:8px; display:block;"><strong>ГК «Экотон»</strong><br>
+                +7(812)325-16-99<br>
+                
+            </p>
+            <span style="padding:8px; display:block;">
+                <ul style="color:red;">{{ flash.error | raw }}</ul>
+                {{ flash.success }}
+                <form name="sendForm" action="" method="post">
+                    <table class="formTab" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td><input type="text" name="n585" class="type1" value="{{ post.n585 }}" placeholder="Имя"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="m585" class="type1" value="{{ post.m585 }}" placeholder="E-mail"></td>
+                        </tr>
+                        <tr>
+                            <td><textarea name="t585" rows="4" class="type2" wrap="VIRTUAL" placeholder="Ваше сообщение">{{ post.t585 }}</textarea></td>
+                        </tr>
+                        <tr>
+                            <td><input name="" title="Отправить" alt="Отправить" type="image" src="../pic/send_button.jpg"></td>
+                        </tr>
+                    </table>
+                </form>
+            </span> </td>
+        <td class="contentTab2Td3"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="contentTab2Td6"><img src="/pic/pixel.gif" width="6" height="6" border="0" alt="" /></td>
+        <td class="contentTab2Td5"><img src="/pic/pixel.gif" width="265" height="1" border="0" alt="" /></td>
+        <td class="contentTab2Td5" style="width:100%;"></td>
+    </tr>
+</table>
+
+{% endblock %}

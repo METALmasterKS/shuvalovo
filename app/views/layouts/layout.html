@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>«Усадьба у озера» – коттеджи, таунхаусы, квартиры в Санкт-Петербурге</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="Усадьба у озера – это определенный стиль жизни. Единое стилистическое и архитектурное решение фасадов, воссозданных по историческим аналогам, прекрасно сочетается с великолепием окружающей природы.">
+        <meta name="Keywords" content="коттеджный посёлок петербург, продажа элитной недвижимости, элитные квартиры петербург, элитная недвижимость петербург,  продажа коттеджей петербург, танхаусы петербург, коттеджи, танхаусы, недвижимость, квартиры">
+        <meta name="Autor" content="СИММЕТРИЯ (www.7i3.spb.ru) | РОДЕН – изменения и дополнения">
+        <base href="{{ base_href }}">
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <link rel="stylesheet" type="text/css" href="cbox.css">
+        <!--[if lt IE 8]>
+        <style type="text/css">
+        div.bg{background-position:center 3px}
+        </style>
+        <![endif]-->
+        <script type="text/javascript" src="scripts.js"></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-20049178-5']);
+            _gaq.push(['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </head>
+    <body>
+        <div class="bg">
+            <table class="topNavTab" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td colspan="2" class="cost" style="position: relative;">
+                        <a href="{{ base_href }}" title="На главную"><img src="pic/logo.png" width="342" height="74" alt=""></a>
+                        <div class="ot-cost">от 54900 руб./метр<sup>2</sup></div>
+                    </td>
+                    <td colspan="2">
+                        <span class="skidka">
+                            <a style="display: none;" href="html/plan.html">Летняя акция: скидка 15%!</a></span>
+                        <img src="pic/akcija.jpg" />
+                    </td>
+                    <td colspan="5">
+                        <span class="phone">тел. (812) 670-0-670</span>
+                    </td>
+
+                    <!--<td colspan="5" style="text-align:right;padding-right:20px">
+                    </td>-->
+                </tr>
+                <tr>
+                    {% set marker = 1 %}
+                    {% for item in navigation %}
+                        <td class="topNavTabTd{{ loop.index }}">
+                            {% if item.html is defined %}
+                                {{ item.html | raw }}
+                            {% else %}
+                                {% if item.href == uri %}
+                                <a href="{{ item.href }}" title="Описание">
+                                    <img src="/pic/pixel.gif" class="marker{{ marker }}On" width="{{ item.w }}" height="45" alt="{{ item.title }}">
+                                </a>
+                                {% else %}
+                                <a class="marker{{ marker }}" onMouseOver="changePicOn('marker{{ marker }}1')" onMouseOut="changePicOut('marker{{ marker }}1')" href="{{ item.href }}" title="{{ item.title }}">
+                                    <img src="pic/pixel.gif" width="{{ item.w }}" height="45" alt="{{ item.title }}">
+                                </a>
+                                {% endif %}
+                                {% set marker = marker + 1 %}
+                            {% endif %}
+                        </td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    {% set marker = 1 %}
+                    {% for item in navigation %}
+                        <td class="topNavTabTd{{ loop.index }}2">
+                            {% if item.html is defined %}
+                                &nbsp;
+                            {% else %}
+                                {% if item.href == uri %}
+                                    <img src="/pic/pixel.gif" id="marker{{ marker }}1" class="marker{{ marker }}1On" width="{{ item.w }}" height="31" alt="{{ item.title }}">
+                                {% else %}
+                                    <img src="/pic/pixel.gif" id="marker{{ marker }}1" class="marker{{ marker }}1" width="{{ item.w }}" height="31" alt="{{ item.title }}">
+                                {% endif %}
+                                {% set marker = marker + 1 %}
+                            {% endif %}
+                        </td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    <td class="topNavTabTdContent" colspan="9">
+                        {% block content %}{% endblock %}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="topNavTabTdBottom">
+                    </td>
+                    <td class="qq1" colspan="8">
+                        Copyright © 2002-2013 <a href="{{ base_href }}" title="Продажа элитной недвижимости, квартиры Петербурга">Продажа элитной недвижимости, квартиры Петербурга</a><br>
+                        <a href="mailto:t.volinskaya@gmail.com" rel="nofollow">Дизайн: Татьяна Волынская</a>
+                        Разработка: СИММЕТРИЯ | РОДЕН
+                    </td>
+                </tr>
+            </table>
+            <!-- Yandex.Metrika counter -->
+            <script type="text/javascript">
+                              (function (d, w, c) {
+                                  (w[c] = w[c] || []).push(function () {
+                                      try {
+                                          w.yaCounter24831233 = new Ya.Metrika({id: 24831233,
+                                              webvisor: true,
+                                              clickmap: true,
+                                              trackLinks: true,
+                                              accurateTrackBounce: true});
+                                      } catch (e) {
+                                      }
+                                  });
+
+                                  var n = d.getElementsByTagName("script")[0],
+                                          s = d.createElement("script"),
+                                          f = function () {
+                                              n.parentNode.insertBefore(s, n);
+                                          };
+                                  s.type = "text/javascript";
+                                  s.async = true;
+                                  s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+                                  if (w.opera == "[object Opera]") {
+                                      d.addEventListener("DOMContentLoaded", f, false);
+                                  } else {
+                                      f();
+                                  }
+                              })(document, window, "yandex_metrika_callbacks");
+            </script>
+            <noscript><div><img src="http://mc.yandex.ru/watch/24831233" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+            <!-- /Yandex.Metrika counter -->
+            <!-- Yandex.Metrika counter -->
+            <script type="text/javascript">
+                (function (d, w, c) {
+                    (w[c] = w[c] || []).push(function () {
+                        try {
+                            w.yaCounter20819431 = new Ya.Metrika({id: 20819431,
+                                clickmap: true,
+                                trackLinks: true,
+                                accurateTrackBounce: true});
+                        } catch (e) {
+                        }
+                    });
+
+                    var n = d.getElementsByTagName("script")[0],
+                            s = d.createElement("script"),
+                            f = function () {
+                                n.parentNode.insertBefore(s, n);
+                            };
+                    s.type = "text/javascript";
+                    s.async = true;
+                    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+                    if (w.opera == "[object Opera]") {
+                        d.addEventListener("DOMContentLoaded", f, false);
+                    } else {
+                        f();
+                    }
+                })(document, window, "yandex_metrika_callbacks");
+            </script>
+            <noscript><div><img src="http://mc.yandex.ru/watch/20819431" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+            <!-- /Yandex.Metrika counter -->
+        </div>
+    </body>
+</html>

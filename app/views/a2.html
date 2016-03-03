@@ -1,0 +1,78 @@
+{% extends "layouts/layout.html" %}
+{# content #}
+{% block content %}
+   
+   <script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../cboxmod.js"></script>
+<table class="contentTab" style="width:1000px" cellpadding="0" cellspacing="0" border="0">
+	<tr> 
+		<td class="contentTabTd1"></td> 
+		<td class="contentTabTd2"></td>
+	</tr>
+	<tr> 
+		<td class="contentTabTd3">
+			<div class="buildinfo" id="liter_a">
+				<div class="flatinfo">
+                    <p><b>Квартира №2</b> <span class="price">— 65.800 р./кв.м.</span></p>
+					<table class="sqrinfo">
+						<tr>
+							<td>Общая площадь:</td> 
+							<td><strong>379,9 м<sup>2</sup></strong></td>
+						</tr>
+						<tr>
+							<td>Площадь квартиры 
+							<br>без технических помещений:</td> 
+							<td><strong>289,7 м<sup>2</sup></strong></td>
+						</tr>
+						<tr>
+							<td>Площадь цокольного этажа:</td> 
+							<td><strong>74,93 м<sup>2</sup></strong></td>
+						</tr>
+						<tr>
+							<td>Количество уровней:</td> 
+							<td><strong>4</strong></td>
+						</tr>
+					</table>
+					<p>Вид из окон:
+					<br>&ndash; во двор
+					<br>&ndash; со 2-го этажа: во двор и на соседний участок
+					<br>&ndash; с мансардного этажа: на озеро и соседний участок
+					</p>
+				</div>
+				<div class="otherlinks">
+					<p>Другие квартиры в этом доме:</p>
+					<p><a href="/html/a1.html" title="Трёхуровневая квартира общей площадью 269,7 м&sup2;">квартира №1</a></p>
+					<p><a href="/html/a3.html" title="Трёхуровневая квартира общей площадью 269,4 м&sup2; с прямым видом на озеро">квартира №3</a></p>
+				</div>
+				<p style="text-indent:0"><a href="/html/liter-a.html" title="Трёхквартирный дом, литер А (ул. Петровская, д.13, лит А)" class="backlink">Назад к описанию дома</a></p>
+			</div>
+			<div class="flatplans" style="width:554px">
+				<div style="float:right" class="shem1TabTd5 floorplan">
+					<a href="?2a_3" title="Подробнее">Мансардный этаж<br>
+						<img src="/pic/pixel.gif" width="254" height="151" class="shem10" alt="Мансардный этаж"></a>
+				</div>
+				<div class="shem1TabTd5 floorplan">
+					<a href="?2a_2" title="Подробнее">Второй этаж<br>
+						<img src="/pic/pixel.gif" width="254" height="151" class="shem9" alt="2 этаж"></a>
+				</div>
+			</div>
+			<div class="flatplans" style="padding-top:0">
+				<div class="shem1TabTd4 floorplan">
+					<a href="?2a_1" title="Подробнее">Первый этаж<br>
+						<img src="/pic/pixel.gif" width="254" height="151" class="shem8" alt="1 этаж"></a>
+				</div>
+				<div class="shem1TabTd3 floorplan">
+					<a href="?2a_0" title="Подробнее">Цокольный этаж<br>
+						<img src="/pic/pixel.gif" width="254" height="151" class="shem7" alt="Цокольный этаж"></a>
+				</div> 
+			</div>
+		</td> 
+		<td class="contentTabTd4"></td>
+	</tr>
+	<tr> 
+		<td class="contentTabTd5"></td> 
+		<td class="contentTabTd6"></td>
+	</tr>
+</table>
+   
+  {% endblock %}

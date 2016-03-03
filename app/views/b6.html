@@ -1,0 +1,77 @@
+{% extends "layouts/layout.html" %}
+{# content #}
+{% block content %}
+
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../cboxmod.js"></script>
+<table class="contentTab" style="width:1000px" cellpadding="0" cellspacing="0" border="0">
+	<tr> 
+		<td class="contentTabTd1"></td> 
+		<td class="contentTabTd2"></td>
+	</tr>
+	<tr> 
+		<td class="contentTabTd3">
+			<div class="buildinfo" id="liter_b">
+				<div class="flatinfo">
+					<p><b>Квартира №6</b> <span class="price">— 73.800 р./кв.м.</span></p>
+					<table class="sqrinfo">
+						<tr>
+							<td>Общая площадь:</td> 
+							<td><strong>419,5 м<sup>2</sup></strong></td>
+						</tr>
+						<tr>
+							<td>Площадь квартиры 
+							<br>без технических помещений:</td> 
+							<td><strong>310,72 м<sup>2</sup></strong></td>
+						</tr>
+						<tr>
+							<td>Площадь цокольного этажа:</td> 
+							<td><strong>110 м<sup>2</sup></strong></td>
+						</tr>
+						<tr>
+							<td>Количество уровней:</td> 
+							<td><strong>4</strong></td>
+						</tr>
+					</table>
+					<p>Вид из окон:
+					<br>&ndash; с 1-го и 2-го этажа: во двор и на улицу Первомайская
+					<br>&ndash; с мансардного этажа: во двор
+					</p>
+				</div>
+				<div class="otherlinks">
+					<p>Другие квартиры в этом доме:</p>
+					<p><a href="/html/b4.html" title="Трёхуровневая квартира общей площадью 245,6 м&sup2;">квартира №4</a></p>
+					<p><a href="/html/b5.html" title="Четырёхуровневая квартира с мансардным этажом общей площадью 316,7 м&sup2;">квартира №5</a></p>
+				</div>
+				<p style="text-indent:0"><a href="/html/liter-b.html" title="Трёхквартирный дом, литер Б (ул. Первомайская, д.26 лит А)" class="backlink">Назад к описанию дома</a></p>
+			</div>
+			<div class="flatplans" style="width:554px">
+				<div style="float:right" class="shem1TabTd5 floorplan">
+					<a href="?6b_3" title="Подробнее">Мансардный этаж<br>
+						<img src="/pic/pixel.gif" width="254" height="151" class="shem21" alt="Мансардный этаж"></a>
+				</div>
+				<div class="shem1TabTd5 floorplan">
+					<a href="?6b_2" title="Подробнее">Второй этаж<br>
+						<img src="/pic/pixel.gif" width="254" height="151" class="shem20" alt="2 этаж"></a>
+				</div>
+			</div>
+			<div class="flatplans" style="padding-top:0">
+				<div class="shem1TabTd4 floorplan">
+					<a href="?6b_1" title="Подробнее">Первый этаж<br>
+						<img src="/pic/pixel.gif" width="254" height="151" class="shem19" alt="1 этаж"></a>
+				</div>
+				<div class="shem1TabTd3 floorplan">
+					<a href="?6b_0" title="Подробнее">Цокольный этаж<br>
+						<img src="/pic/pixel.gif" width="254" height="151" class="shem18" alt="Цокольный этаж"></a>
+				</div> 
+			</div>
+		</td> 
+		<td class="contentTabTd4"></td>
+	</tr>
+	<tr>
+		<td class="contentTabTd5"></td> 
+		<td class="contentTabTd6"></td>
+	</tr>
+</table>
+   
+  {% endblock %}

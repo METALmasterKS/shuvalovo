@@ -1,0 +1,42 @@
+{% extends "layouts/layout.html" %}
+{# content #}
+{% block content %}
+   
+   <script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../cboxmod.js"></script>
+<table class="contentTab" style="width:750px" cellpadding="0" cellspacing="0" border="0">
+	<tr> 
+		<td class="contentTabTd1"></td> 
+		<td class="contentTabTd2"></td>
+	</tr>
+	<tr> 
+		<td class="contentTabTd3">
+			<div class="buildinfo" id="liter_b">
+			<p><b>ул. Первомайская, д.26 лит А</b></p><br>
+			<p><b>Квартира №4:</b><br><a href="/html/b4.html" title="Подробнее">Трёхуровневая квартира общей площадью 245,6 м<sup>2</sup></a></p><br>
+			<p><b>Квартира №5:</b><br><a href="/html/b5.html" title="Подробнее">Четырёхуровневая квартира с мансардным этажом<sup>&nbsp;</sup><br>общей площадью 316,7 м<sup>2</sup></a></p><br>
+			<p><b>Квартира №6:</b> <span class="price">— 73.800 р./кв.м.</span><br><a href="/html/b6.html" title="Подробнее">Четырёхуровневая квартира с мансардным этажом<sup>&nbsp;</sup><br>общей площадью 419,5 м<sup>2</sup></a></p><br>
+			<p style="text-indent:0"><a href="/html/plan.html" title="Планировки" class="backlink">Назад к планировкам</a></p>
+			</div>
+			<div class="buildfaces">
+				<div class="buildface">
+					<a href="?b_face1" title="Увеличить">
+						<img src="/pic/pixel.gif" width="164" height="96" alt="литер B, фасад W" id="b_face1">
+					</a><br>Фасад дома &ndash; западная сторона
+				</div>
+				<div class="buildface">
+					<a href="?b_face2" title="Увеличить">
+						<img src="/pic/pixel.gif" width="164" height="96" alt="литер B, фасад N" id="b_face2">
+					</a><br>Фасад дома &ndash; северная сторона
+				</div>
+			</div>
+		</td> 
+		<td class="contentTabTd4"></td>
+	</tr>
+	<tr> 
+		<td class="contentTabTd5"></td> 
+		<td class="contentTabTd6"></td>
+	</tr>
+</table>
+   
+  {% endblock %}
